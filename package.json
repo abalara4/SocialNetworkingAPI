@@ -2,16 +2,19 @@
   "name": "socialnetworkingapi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "npm run build && node dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "mongoose": "^8.8.4"
+    "mongoose": "^8.8.4",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
